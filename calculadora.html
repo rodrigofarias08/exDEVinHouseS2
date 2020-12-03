@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="shortcut icon" href="./imagens/favicon.ico" type="image/x-icon">
+    <script type="text/javascript" src="script.js"></script>
+    <title>DEV in House</title>
+</head>
+
+<body class="TObody">
+    <header class="cab">
+        <div class="grid">
+
+            <div class="imagemcab">
+                <table>
+                    <tr>
+                        <td>
+                            <img src="./imagens/favicon.ico" alt="Computador 2">
+                        </td>
+                        <td>
+                            <h3>DEV in House</h3>
+                        </td>
+                    </tr>
+
+                </table>
+            </div>
+
+
+            <div class="menu1cab">
+                <a href="index.html" type="button">
+                    <h4>Home</h4>
+                </a>
+            </div>
+
+        </div>
+
+    </header>
+
+    <div>
+        <h1>Calculadora</h1>
+        <label for="operando1">
+            Operando 1:
+        </label>
+        <br>
+        <input id="operando1" type="number" placeholder="0"/>
+        <br>
+        
+        <label for="operando2">
+            Operando 2:
+        </label>
+        <br>
+        <input id="operando2" type="number" placeholder="0"/>
+        
+        <br>
+        <button class="botao" onclick="somar()">
+            Somar
+        </button>
+        <button class="botao" onclick="subtrair()">
+            Subtrair
+        </button>
+        <button class="botao" onclick="multiplicar()">
+            Multiplicar
+        </button>
+        <button class="botao" onclick="dividir()">
+            Dividir
+        </button>
+    </div>
+
+    <br>
+    <label for="resultado">
+        Resultado: 
+    </label>
+    <br>
+    <input id="resultado" type="number" readonly/>
+    <br>
+    <br>
+    </div>
+
+
+    <footer class="TOfooter2 verde">
+        <span class="spanRodape">
+            <strong>Rodrigo Farias</strong> - aluno DEV in House
+        </span>
+    </footer>
+</body>
+
+</html>
