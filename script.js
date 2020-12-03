@@ -90,3 +90,35 @@ function dividir() {
     
 }
 
+function verificaParidade() {
+    numero = Math.trunc(document.getElementById("numero").value);
+
+    if (numero % 2 == 0) {
+        document.getElementById("resultado").innerText = "par";
+    }
+    else {
+        document.getElementById("resultado").innerText = "impar";
+    }
+}
+
+window.onload = function () {
+    dispoeHorarioEntrada();
+};
+
+window.setInterval('dispoeHorarioAtual()', 1000);
+
+function dispoeHorarioEntrada() {
+    if (document.getElementById("titulo").innerText == "Horário de Abertura da página") {
+        var dataAtual = (new Date()).toString();
+
+        document.getElementById("resultado").innerText = dataAtual.substring(16, 21);
+    }
+}
+
+function dispoeHorarioAtual() {
+    if (document.getElementById("titulo").innerText == "Horário de Abertura da página") {
+        var dataAtual = (new Date()).toString();
+
+        document.getElementById("horarioAtual").innerText = dataAtual.substring(16, 21);
+    }
+}
