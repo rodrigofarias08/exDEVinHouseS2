@@ -1,3 +1,16 @@
+window.onload = function () {
+    dataInicial();
+    dispoeHorarioEntrada();
+    verificaEstacao();
+ };
+
+ window.setInterval('dispoeHorarioAtual()', 1000);
+
+
+
+
+
+
 function confirmacao() {
     if (confirm("Você tem certeza que deseja sair da página?")) {
         location.href = "imagens.html";
@@ -39,8 +52,6 @@ function calcularIdade() {
 
 
 
-
-window.onload = function () { dataInicial() };
 function dataInicial() {
 
     if (document.getElementById("nascimento") != null) {
@@ -101,11 +112,7 @@ function verificaParidade() {
     }
 }
 
-window.onload = function () {
-    dispoeHorarioEntrada();
-};
 
-window.setInterval('dispoeHorarioAtual()', 1000);
 
 function dispoeHorarioEntrada() {
     if (document.getElementById("titulo").innerText == "Horário de Abertura da página") {
@@ -120,5 +127,40 @@ function dispoeHorarioAtual() {
         var dataAtual = (new Date()).toString();
 
         document.getElementById("horarioAtual").innerText = dataAtual.substring(16, 21);
+    }
+}
+
+
+
+function verificaEstacao(){
+    var mes = new Date().getMonth();
+    var dia = new Date().getDay();
+    var estacao = document.getElementById("resultado");
+    var fotoEstacao = document.getElementById("imagemEstacao");
+
+    //Podem ocorrer pequenos erros de datas limite das estações pois as datas variam dependendo do ano.
+    if (mes == 12 | mes < 4) { //meses em que acontece o verão
+        if (!(mes == 12 & dia < 21) & !(mes == 3 & dia > 19)){ // com excessão dos dias <21/12 e >19/3
+            estacao.innerText = "Verão";
+            fotoEstacao.src = "./imagens/verao.jpg"
+        }
+    }
+    if (mes > 2 & mes < 7) { //meses em que acontece o outono
+        if (!(mes == 3 & dia < 20) & !(mes == 6 & dia > 20)){ // com excessão dos dias <20/3 e >20/6
+            estacao.innerText = "Outono";
+            fotoEstacao.src = "./imagens/outono.jpg"
+        }
+    }
+    if (mes > 5 & mes < 10) { //meses em que acontece o inverno
+        if (!(mes == 6 & dia < 21) & !(mes == 9 & dia > 21)){ // com excessão dos dias <21/6 e >21/9
+            estacao.innerText = "Inverno";
+            fotoEstacao.src = "./imagens/inverno.jpg"
+        }
+    }
+    if (mes > 8) { //meses em que acontece a primavera
+        if (!(mes == 9 & dia < 22) & !(mes == 12 & dia > 20)){ // com excessão dos dias <22/9 e >20/12
+            estacao.innerText = "Primavera";
+            fotoEstacao.src = "./imagens/primavera.jpg"
+        }
     }
 }
