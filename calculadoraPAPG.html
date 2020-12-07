@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estiloListaMercado.css">
+    <link rel="shortcut icon" href="notepad.ico" type="image/x-icon">
+    <script src="scriptListaMercado.js" defer></script>
+    <title>Lista de Mercado</title>
+</head>
+
+<body id="corpo">
+
+    <header id="cabecalho">
+        <h1 id="tituloCab">Lista de Mercado</h1>
+    </header>
+
+    <section id="secaoToDoList">
+        <!--Entrada de informação-->
+        <div id="divInserirItem">
+            <label for="valorInicial">Valor inicial:</label>
+            <input id="valorInicial" type="number" placeholder="Digite o valor inicial">
+            <br>
+            <label for="raiz">Raiz:</label>
+            <input id="raiz" type="number" placeholder="Digite a raiz">
+            <br>
+            <br>
+            <button id="btCalcularPA">Calcular PA</button>
+            <button id="btCalcularPG">Calcular PG</button>
+            <br>
+            <br>
+        </div>
+
+        <!--Resultado-->
+        <div id="divListaItens">
+            <br>
+            <ul id="listaResultado"></ul>
+        </div>
+
+    </section>
+</body>
+
+</html>

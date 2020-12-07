@@ -1,0 +1,123 @@
+button {
+    cursor: pointer;
+    float: right;
+    width: 25px;
+    padding: 5px;
+    margin: 3px;
+}
+
+button:hover {
+    background-color: #576169;
+}
+
+ul {
+    list-style-type: none;
+    padding: 10px;
+    height: 390px;
+    background-color: #ffffff;;
+    overflow-y: auto;
+}
+
+li {
+    text-align: left;
+    font-size:18px;
+    list-style-type: none;
+    height: 40px;
+    margin: 20px 0 0 0;
+    border-bottom: 1px solid;
+    overflow-x: auto;
+}
+
+input[type=checkbox] {
+    transform: scale(2);
+    margin: 1em;
+}
+
+#corpo {
+    text-align: center;
+    padding-top: 120px;
+}
+
+#cabecalho {
+    position:fixed;
+    top:0;
+    left:0;
+    padding:0;
+	margin:0;
+    height: 120px;
+    width: 100%;
+    min-width: 500px;
+    font-size: 30px;
+    background: #335C7D;
+    color: #fff;
+    font-family: 'PT Sans', sans-serif;
+}
+
+#tituloCab {
+    margin:0;
+    padding: 0;
+    padding-top: 0.4em;
+}
+
+#secaoToDoList {
+    max-width: 500px;
+    max-height: 800px;
+    margin: auto;
+    background-color: #9aadbd;
+    height: 300;
+    padding: 2%;
+    border: 2px solid;
+}
+
+#nomeNovoItem {
+    border:solid #335C7D;
+    font-size:18px;
+    height:32px;
+    width:70%;
+    border-radius:10px;
+}
+
+#btAdicionarItem {
+    border:solid #335C7D;
+    font-size:18px;
+    height:36px;
+    width:20%;
+    border-radius:10px;
+}
+
+#btSalvarLista {
+    border:solid #335C7D;
+    font-size:18px;
+    height:36px;
+    width:30%;
+    border-radius:10px;
+}
+
+#btCarregarLista {
+    border:solid #335C7D;
+    font-size:18px;
+    height:36px;
+    width:30%;
+    border-radius:10px;
+}
+
+#btCalcularPA {
+    border:solid #335C7D;
+    font-size:18px;
+    height:36px;
+    width:30%;
+    border-radius:10px;
+}
+
+#btCalcularPG {
+    border:solid #335C7D;
+    font-size:18px;
+    height:36px;
+    width:30%;
+    border-radius:10px;
+}
+
+.textoTachado {
+    text-decoration: line-through;
+}  
+  

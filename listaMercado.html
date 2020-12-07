@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estiloListaMercado.css">
+    <link rel="shortcut icon" href="notepad.ico" type="image/x-icon">
+    <script src="scriptListaMercado.js" defer></script>
+    <title>Lista de Mercado</title>
+</head>
+
+<body id="corpo">
+
+    <header id="cabecalho">
+        <h1 id="tituloCab">Lista de Mercado</h1>
+    </header>
+
+    <section id="secaoToDoList">
+        <!--Subseção para gerir a inclusão de novos itens-->
+        <div id="divInserirItem">
+            <label for="nomeNovoItem">Item a adicionar:</label>
+            <br>
+            <input id="nomeNovoItem" type="text" placeholder="Digite a quant. e o item...">
+            <button id="btAdicionarItem">Adicionar</button>
+            <br>
+            <button id="btSalvarLista">Salvar a Lista</button>
+            <br>
+            <br>
+            <br>
+            <button id="btCarregarLista">Carregar a Lista</button>
+            <br>
+            <br>
+        </div>
+
+        <!--Subseção para gerir os itens já inclusos-->
+        <div id="divListaItens">
+            <br>
+            <select id="listaItens"></select>
+        </div>
+
+    </section>
+</body>
+
+</html>
